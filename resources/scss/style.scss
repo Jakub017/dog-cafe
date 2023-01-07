@@ -1,0 +1,408 @@
+// Variables
+$baige: rgb(217, 170, 96);
+$brown: rgb(141, 82, 48);
+$pink: rgb(226, 152, 159);
+$blue: rgb(160, 216, 238);
+$darkBlue: rgb(124, 182, 205);
+$shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
+
+
+$mainFont: 'Londrina Solid',
+cursive;
+$secondaryFont: 'Work Sans',
+sans-serif;
+
+// Styles reset
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $brown;
+}
+
+:root {
+    font-size: 10px;
+}
+
+// Static elements starts
+
+.colored-pink {
+    color: $baige;
+}
+
+section {
+    padding: 1.5rem;
+
+    &>h1 {
+        color: #fff;
+        font-family: $mainFont;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+// Static elements ends
+
+.nav {
+    position: relative;
+    width: 100%;
+    background-color: $brown;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        max-width: 60px;
+    }
+
+    &__menu {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 2.2rem;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
+    &__hamburger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 3.5rem;
+        height: 2.5rem;
+    }
+
+    &__hamburger-item {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 2rem;
+    }
+
+    &__mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem
+    }
+
+    h3 {
+        color: #fff;
+        font-family: $mainFont;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+
+
+    &__wave {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        margin-bottom: 3rem;
+
+        & svg {
+            position: relative;
+            display: block;
+            width: calc(182% + 1.3px);
+            height: 35px;
+        }
+
+        .shape-fill {
+            fill: $brown;
+        }
+    }
+
+}
+
+.hero {
+    width: 100%;
+    height: 75vh;
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 4rem;
+        padding: 2rem;
+        max-width: 800px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 4.2rem;
+        font-family: $mainFont;
+        margin-bottom: 1.5rem;
+        position: relative;
+
+        &::after {
+            transform: scale(0.5);
+        }
+    }
+
+    &__description {
+        color: $baige;
+        font-family: $secondaryFont;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: justify;
+        color: $brown;
+    }
+
+    &__image {
+        display: none;
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        bottom: -100px;
+        right: -100px;
+    }
+
+    &__button {
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        background-color: $pink;
+        color: #fff;
+        padding: 2rem;
+        border-radius: 44px;
+        font-family: $mainFont;
+        text-transform: uppercase;
+    }
+
+    &__paws {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        max-width: 120px;
+    }
+}
+
+.offer {
+    background-color: $blue;
+    position: relative;
+
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('../img/dog.png');
+        // background-size: 42px;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    &__isotope {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    &__button {
+        width: 150px;
+        border-radius: 44px;
+        padding: 1.5rem;
+        border: none;
+        font-family: $mainFont;
+        color: $baige;
+        background-color: #fff;
+        font-size: 2.1rem;
+        box-shadow: $shadow;
+
+        // text-transform: uppercase;
+
+        &--active {
+            color: #fff;
+            background-color: $baige;
+        }
+
+    }
+
+    &__item {
+        width: 85%;
+        max-width: 300px;
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5rem;
+        box-shadow: $shadow;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: .5rem;
+    }
+
+    &__tag {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__name {
+        font-family: $mainFont;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+    }
+
+    &__price {
+        font-family: $mainFont;
+        font-size: 2.4rem;
+        color: $baige;
+        // letter-spacing: .2rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        font-family: $secondaryFont;
+    }
+}
+
+
+.about {
+    position: relative;
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/paw.png');
+    }
+
+    &__title {
+        color: $brown;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        width: 85%;
+        max-width: 1200px;
+        background-color: #fff;
+        border-radius: 2rem;
+        margin: 0 auto;
+        padding: 2rem;
+        transform-style: preserve-3d;
+        gap: 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $baige;
+            background-color: $baige;
+            top: 50%;
+            left: 50%;
+            border-radius: 2rem;
+            transform: translateZ(-1px) translate(-50%, -50%) rotate(2deg);
+            box-shadow: $shadow;
+        }
+    }
+
+    &__image {
+        width: 90%;
+        border-radius: 50%;
+        max-width: 350px;
+        box-shadow: $shadow;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__part {
+        position: relative;
+        padding: .5rem 0;
+
+        &::after {
+            content: '';
+            width: 80%;
+            height: .1rem;
+            background-color: $baige;
+            position: absolute;
+            top: calc(100% + 1rem);
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2rem;
+        }
+
+        &:nth-last-child(1)::after {
+            display: none;
+        }
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        color: $brown;
+        font-family: $mainFont;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+        letter-spacing: .2rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        color: $brown;
+        font-family: $secondaryFont;
+    }
+
+}
