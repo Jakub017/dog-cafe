@@ -179,6 +179,33 @@
                 </div>
             </div>
         </section>
+        <section class="pets">
+            <div class="pets__background"></div>
+            <h1 class="pets__title">Our pets</h1>
+            <div class="pets__wrapper">
+                <div class="pets__item">
+                    <img src="{{ asset('img/pet1.jpg') }}" alt="" class="pets__image">
+                    <h1 class="pets__name">Rainey</h1>
+                    <h3 class="pets__breed">Labrador</h3>
+                    <p class="pets__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit
+                        exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
+                </div>
+                <div class="pets__item">
+                    <img src="{{ asset('img/pet2.jpg') }}" alt="" class="pets__image">
+                    <h1 class="pets__name">Meadow</h1>
+                    <h3 class="pets__breed">Papillon</h3>
+                    <p class="pets__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit
+                        exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
+                </div>
+                <div class="pets__item">
+                    <img src="{{ asset('img/pet3.jpg') }}" alt="" class="pets__image">
+                    <h1 class="pets__name">Iris</h1>
+                    <h3 class="pets__breed">Australian Shepherd</h3>
+                    <p class="pets__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit
+                        exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>

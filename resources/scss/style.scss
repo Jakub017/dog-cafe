@@ -3,7 +3,6 @@ $baige: rgb(217, 170, 96);
 $brown: rgb(141, 82, 48);
 $pink: rgb(226, 152, 159);
 $blue: rgb(160, 216, 238);
-$darkBlue: rgb(124, 182, 205);
 $shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
 
 
@@ -186,12 +185,13 @@ section {
         display: block;
         font-size: 2rem;
         text-decoration: none;
-        background-color: $pink;
+        background-color: $baige;
         color: #fff;
         padding: 2rem;
         border-radius: 44px;
         font-family: $mainFont;
         text-transform: uppercase;
+        box-shadow: $shadow;
     }
 
     &__paws {
@@ -405,4 +405,75 @@ section {
         font-family: $secondaryFont;
     }
 
+}
+
+.pets {
+    background-color: $baige;
+    position: relative;
+
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../img/treat.png');
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__item {
+        background-color: #fff;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 2rem;
+        width: 85%;
+        max-width: 300px;
+        box-shadow: $shadow;
+    }
+
+    &__image {
+        width: 90%;
+        max-width: 200px;
+        border-radius: 50%;
+        box-shadow: $shadow;
+        margin-bottom: .7rem;
+    }
+
+    &__name {
+        font-size: 2.6rem;
+        font-family: $mainFont;
+        color: $brown;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+    }
+
+    &__breed {
+        font-size: 2.4rem;
+        color: $baige;
+        font-family: $mainFont;
+        letter-spacing: .1rem;
+    }
+
+    &__description {
+        font-family: $secondaryFont;
+        font-size: 1.6rem;
+        text-align: center;
+    }
 }
