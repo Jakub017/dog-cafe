@@ -1,6 +1,6 @@
 // Variables
 $baige: rgb(217, 170, 96);
-$brown: rgb(141, 82, 48);
+$brown: #8D5230;
 $pink: rgb(226, 152, 159);
 $blue: rgb(160, 216, 238);
 $shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
@@ -23,6 +23,10 @@ sans-serif;
     font-size: 10px;
 }
 
+b {
+    color: inherit;
+}
+
 // Static elements starts
 
 .colored-baige {
@@ -30,7 +34,7 @@ sans-serif;
 }
 
 section {
-    padding: 1.5rem;
+    padding: 2rem;
 
     &>h1 {
         color: #fff;
@@ -60,7 +64,7 @@ section {
     }
 
     &__logo {
-        max-width: 60px;
+        max-width: 80px;
     }
 
     &__menu {
@@ -113,7 +117,7 @@ section {
 
     &__wave {
         position: absolute;
-        top: 80%;
+        top: 85%;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -592,12 +596,110 @@ section {
 }
 
 
+.footer {
+    background-color: $brown;
+    position: relative;
+    margin-top: 3.5rem;
+
+
+    &__wave {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+
+        & svg {
+            position: relative;
+            display: block;
+            width: calc(137% + 1.3px);
+            height: 70px;
+        }
+
+        .shape-fill {
+            fill: #8D5230;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        gap: 2rem;
+    }
+
+    &__column {
+        display: flex;
+        // flex-grow: 1;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 350px;
+    }
+
+    &__heading {
+        color: #fff;
+        font-family: $mainFont;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__logo {
+        max-width: 130px;
+    }
+
+    &__text {
+        font-family: $secondaryFont;
+        color: #fff;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__link {
+        color: #fff;
+        font-family: $secondaryFont;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+
+    &__copyright {
+        text-align: center;
+        padding: 3rem 0;
+    }
+}
+
+
 @media(min-width: 768px) {
     .contact {
         &__field {
             &--half {
                 width: 47%;
             }
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            flex-direction: row;
+        }
+
+        &__column {
+            width: 48%;
         }
     }
 }

@@ -195,6 +195,13 @@
                     <p class="pets__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit
                         exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
                 </div>
+                <div class="pets__item">
+                    <img src="{{ asset('img/pet3.jpg') }}" alt="" class="pets__image">
+                    <h1 class="pets__name">Iris</h1>
+                    <h3 class="pets__breed">Australian Shepherd</h3>
+                    <p class="pets__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit
+                        exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
+                </div>
             </div>
         </section>
         <section class="contact">
@@ -259,7 +266,62 @@
 
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer__column">
+                <img src="{{ asset('img/logo.png') }}" alt="" class="footer__logo">
+                <p class="footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio mollitia
+                    voluptatem,
+                    minima quo animi soluta consequuntur a tempore, repellendus et assumenda quam incidunt praesentium
+                    consequatur vel dignissimos est, autem voluptatum.</p>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__heading">About dog cafes</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://en.wikipedia.org/wiki/Dog_caf%C3%A9">Wikipedia page</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__heading">Animals in need</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://helpingdogsandcatsuk.org/">Helping dogs & cats UK</a></li>
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://almosthome.dog/">Almost home dog rescue</a></li>
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://guardianangelsdogrescue.co.uk/">Guardian Angels Dog Rescue</a></li>
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://threecountiesdogrescue.org/">Three Counties Dog Rescue</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h2 class="footer__heading">Other dog cafes</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" target="_blank"
+                            href="https://pawsitivecafe.com/">Pawsitive cafe</a></li>
+                    <li class="footer__item"><a class="footer__link" target="_blank" href="https://www.pupup.cafe/">Pup
+                            up cafe</a></li>
+                    <li class="footer__item"><a class="footer__link" target="_blank" href="https://dogandscone.com/">Dog
+                            and Scone Cafe</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__text">@ 2023 <b>Doggo Cafe</b> | Created with love by <b><a class="footer__link"
+                        target="_blank" href="https://www.lipinskijakub.pl/">Jakub Lipiński.</a></b><br> Big shout out
+                to <b><a class="footer__link" target="_blank" href="https://www.kittycafe.co.uk/">Kitty Cafe</a></b></p>
+        </div>
+    </footer>
 </body>
 
 </html>

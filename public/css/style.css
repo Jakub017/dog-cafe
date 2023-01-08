@@ -2,11 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
 }
 
 :root {
   font-size: 10px;
+}
+
+b {
+  color: inherit;
 }
 
 .colored-baige {
@@ -14,7 +18,7 @@
 }
 
 section {
-  padding: 1.5rem;
+  padding: 2rem;
 }
 section > h1 {
   color: #fff;
@@ -29,7 +33,7 @@ section > h1 {
 .nav {
   position: relative;
   width: 100%;
-  background-color: rgb(141, 82, 48);
+  background-color: #8D5230;
 }
 .nav__wrapper {
   display: flex;
@@ -40,7 +44,7 @@ section > h1 {
   margin: 0 auto;
 }
 .nav__logo {
-  max-width: 60px;
+  max-width: 80px;
 }
 .nav__menu {
   display: none;
@@ -85,7 +89,7 @@ section > h1 {
 }
 .nav__wave {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -100,7 +104,7 @@ section > h1 {
   height: 35px;
 }
 .nav__wave .shape-fill {
-  fill: rgb(141, 82, 48);
+  fill: #8D5230;
 }
 
 .hero {
@@ -134,7 +138,7 @@ section > h1 {
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: justify;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   max-width: 500px;
 }
 .hero__image {
@@ -264,7 +268,7 @@ section > h1 {
   background-image: url("../img/paw.png");
 }
 .about__title {
-  color: rgb(141, 82, 48);
+  color: #8D5230;
 }
 .about__wrapper {
   display: flex;
@@ -328,7 +332,7 @@ section > h1 {
 }
 .about__heading {
   font-size: 2.4rem;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   font-family: "Londrina Solid", cursive;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -336,7 +340,7 @@ section > h1 {
 }
 .about__description {
   font-size: 1.6rem;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -387,7 +391,7 @@ section > h1 {
 .pets__name {
   font-size: 2.6rem;
   font-family: "Londrina Solid", cursive;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -407,10 +411,10 @@ section > h1 {
   position: relative;
 }
 .contact__title {
-  color: rgb(141, 82, 48);
+  color: #8D5230;
 }
 .contact__text {
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   font-size: 1.6rem;
@@ -440,10 +444,10 @@ section > h1 {
 .contact__input {
   font-size: 1.6rem;
   font-family: "Work Sans", sans-serif;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
   padding: 1rem;
   border-radius: 1rem;
-  border: 1px solid rgb(141, 82, 48);
+  border: 1px solid #8D5230;
   outline: none;
 }
 .contact__send {
@@ -482,7 +486,7 @@ section > h1 {
 .contact__heading {
   font-size: 4rem;
   font-family: "Londrina Solid", cursive;
-  color: rgb(141, 82, 48);
+  color: #8D5230;
 }
 .contact__name {
   font-size: 2.4rem;
@@ -497,9 +501,89 @@ section > h1 {
   text-decoration: none;
 }
 
+.footer {
+  background-color: #8D5230;
+  position: relative;
+  margin-top: 3.5rem;
+}
+.footer__wave {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.footer__wave svg {
+  position: relative;
+  display: block;
+  width: calc(137% + 1.3px);
+  height: 70px;
+}
+.footer__wave .shape-fill {
+  fill: #8D5230;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+.footer__column {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 350px;
+}
+.footer__heading {
+  color: #fff;
+  font-family: "Londrina Solid", cursive;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.footer__logo {
+  max-width: 130px;
+}
+.footer__text {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__link {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 3rem 0;
+}
+
 @media (min-width: 768px) {
   .contact__field--half {
     width: 47%;
+  }
+  .footer__wrapper {
+    flex-direction: row;
+  }
+  .footer__column {
+    width: 48%;
   }
 }
 @media (min-width: 1024px) {
