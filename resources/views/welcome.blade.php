@@ -317,7 +317,7 @@
             </div>
         </div>
         <div class="footer__copyright">
-            <p class="footer__text">@ 2023 <b>Doggo Cafe</b> | Created with love by <b><a class="footer__link"
+            <p class="footer__text">© 2023 <b>Doggo Cafe</b> | Created with love by <b><a class="footer__link"
                         target="_blank" href="https://www.lipinskijakub.pl/">Jakub Lipiński.</a></b><br> Big shout out
                 to <b><a class="footer__link" target="_blank" href="https://www.kittycafe.co.uk/">Kitty Cafe</a></b></p>
         </div>
