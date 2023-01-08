@@ -45,13 +45,12 @@
             </div>
         </nav>
     </header>
-
     <main>
         <section class="hero">
             <div class="hero__wrapper">
                 <div class="hero__text">
                     <h1 class="hero__title">WELCOME TO DOGGO CAFÉ.
-                        <span class="colored-pink">CUTE DOGS, GOOD FOOD, HAPPY PEOPLE!</span></h1>
+                        <span class="colored-baige">CUTE DOGS, GOOD FOOD, HAPPY PEOPLE!</span></h1>
                     <p class="hero__description">The Doggo Café is a heaven for dog lovers, where you can enjoy
                         delicious cakes, coffees and teas all in the company of our resident dogs.
                     </p>
@@ -78,7 +77,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -88,7 +86,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -98,7 +95,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -108,7 +104,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -118,7 +113,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -128,7 +122,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -138,7 +131,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
                 <div class="offer__item">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
@@ -148,7 +140,6 @@
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                    <!-- <h3 class="offer__price">$12</h3> -->
                 </div>
             </div>
         </section>
@@ -205,6 +196,67 @@
                         exercitationem impedit illo ea ipsa quo eveniet! Odit dolorum accusamus modi quod, illum.</p>
                 </div>
             </div>
+        </section>
+        <section class="contact">
+            <h1 class="contact__title">Contact us</h1>
+            <p class="contact__text">Ask a question about the cafe or adopting a pet! We will reply as soon as possible
+            </p>
+            <div class="contact__wrapper">
+                <form action="#" class="contact__form">
+                    <div class="contact__field contact__field--half">
+                        <label for="name" class="contact__label">Name</label>
+                        <input type="text" name="name" class="contact__input">
+                    </div>
+                    <div class="contact__field contact__field--half">
+                        <label for="email" class="contact__label">Email</label>
+                        <input type="email" name="email" class="contact__input">
+                    </div>
+                    <div class="contact__field">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <input type="text" name="subject" class="contact__input">
+                    </div>
+                    <div class="contact__field">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="message" class="contact__input" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="contact__send">Send!</button>
+                </form>
+                <div class="contact__info">
+                    <h2 class="contact__heading">
+                        Contact <span class="colored-baige">info</span>
+                    </h2>
+                    <div class="contact__block">
+                        <h4 class="contact__name">Address</h4>
+                        <p class="contact__part">
+                            71 Cherry Court<br>
+                            SOUTHAMPTON<br>
+                            SO53 5PD<br>
+                            UK
+                        </p>
+                    </div>
+                    <div class="contact__block">
+                        <h4 class="contact__name">Opening hours</h4>
+                        <p class="contact__part">
+                            <b>Monday: </b>12:00 - 21:00<br>
+                            <b>Tuesday: </b>12:00 - 21:00<br>
+                            <b>Wednesday: </b>12:00 - 21:00<br>
+                            <b>Thursday: </b>12:00 - 21:00<br>
+                            <b>Friday: </b>12:00 - 22:00<br>
+                            <b>Saturday: </b>10:00 - 21:00<br>
+                            <b>Sunday: </b>10:00 - 21:00
+                        </p>
+                    </div>
+                    <div class="contact__block">
+                        <h4 class="contact__name">Contact</h4>
+                        <p class="contact__part">
+                            <b>Mail: </b><a class="contact__link"
+                                href="mailto:contact@doggocafe.co.uk">contact@doggocafe.co.uk</a><br>
+                            <b>Phone: </b><a class="contact__link" href="tel:5467 359 9843">5467 359 9843</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer></footer>
