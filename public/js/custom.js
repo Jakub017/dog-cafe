@@ -56,6 +56,31 @@ offerButtons.forEach((button) => {
 
 // Scroll to section code starts
 
+const offerSection = document.querySelector('.offer');
+const offerLink = document.querySelector('.nav__link--offer');
+const aboutSection = document.querySelector('.about');
+const aboutLink = document.querySelector('.nav__link--about');
+const petsSection = document.querySelector('.pets');
+const petsLink = document.querySelector('.nav__link--pets');
+const contactSection = document.querySelector('.contact');
+const contactLink = document.querySelector('.nav__link--contact');
+
+
+offerLink.addEventListener('click', function () {
+    offerSection.scrollIntoView();
+});
+
+aboutLink.addEventListener('click', function () {
+    aboutSection.scrollIntoView();
+});
+
+petsLink.addEventListener('click', function () {
+    petsSection.scrollIntoView();
+});
+
+contactLink.addEventListener('click', function () {
+    contactSection.scrollIntoView();
+});
 
 
 // Scroll to section code ends

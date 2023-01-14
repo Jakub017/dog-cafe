@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   color: rgb(141, 82, 48);
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -60,6 +61,10 @@ section > h1 {
   text-transform: uppercase;
   font-family: "Londrina Solid", cursive;
   transition: 0.3s ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 .nav__link:hover {
   color: rgb(217, 170, 96);

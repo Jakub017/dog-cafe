@@ -20,11 +20,11 @@
             <div class="nav__wrapper">
                 <img class="nav__logo" src="{{ asset('img/logo.png') }}" alt="">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href=".offer" class="nav__link">Offer</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Our pets</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><button href="/" class="nav__link">Home</button></li>
+                    <li class="nav__item"><button class="nav__link nav__link--offer">Offer</button></li>
+                    <li class="nav__item"><button class="nav__link nav__link--about">About</button></li>
+                    <li class="nav__item"><button class="nav__link nav__link--pets">Our pets</button></li>
+                    <li class="nav__item"><button class="nav__link nav__link--contact">Contact</button></li>
                 </ul>
                 <div class="nav__mobile">
                     <h3>menu</h3>

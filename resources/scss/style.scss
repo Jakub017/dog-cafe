@@ -16,6 +16,7 @@ sans-serif;
     margin: 0;
     box-sizing: border-box;
     color: $brown;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -81,6 +82,10 @@ section {
         text-transform: uppercase;
         font-family: $mainFont;
         transition: .3s ease-in-out;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
 
         &:hover {
             color: $baige;
