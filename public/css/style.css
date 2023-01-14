@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
 }
 
 :root {
@@ -33,7 +33,7 @@ section > h1 {
 .nav {
   position: relative;
   width: 100%;
-  background-color: #8D5230;
+  background-color: rgb(141, 82, 48);
 }
 .nav__wrapper {
   display: flex;
@@ -57,7 +57,12 @@ section > h1 {
   color: #fff;
   font-size: 2.2rem;
   text-decoration: none;
-  font-weight: 300;
+  text-transform: uppercase;
+  font-family: "Londrina Solid", cursive;
+  transition: 0.3s ease-in-out;
+}
+.nav__link:hover {
+  color: rgb(217, 170, 96);
 }
 .nav__hamburger {
   display: flex;
@@ -104,7 +109,7 @@ section > h1 {
   height: 35px;
 }
 .nav__wave .shape-fill {
-  fill: #8D5230;
+  fill: rgb(141, 82, 48);
 }
 
 .hero {
@@ -138,7 +143,7 @@ section > h1 {
   font-size: 1.6rem;
   line-height: 1.5;
   text-align: justify;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   max-width: 500px;
 }
 .hero__image {
@@ -212,10 +217,18 @@ section > h1 {
   background-color: #fff;
   font-size: 2.1rem;
   box-shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.offer__button:hover {
+  transform: scale(1.05);
 }
 .offer__button--active {
   color: #fff;
   background-color: rgb(217, 170, 96);
+}
+.offer__button--active:hover {
+  transform: scale(1);
 }
 .offer__item {
   width: 85%;
@@ -229,6 +242,10 @@ section > h1 {
   flex-direction: column;
   gap: 1.5rem;
   box-shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.offer__item--active {
+  display: flex;
 }
 .offer__img {
   width: 100%;
@@ -268,7 +285,7 @@ section > h1 {
   background-image: url("../img/paw.png");
 }
 .about__title {
-  color: #8D5230;
+  color: rgb(141, 82, 48);
 }
 .about__wrapper {
   display: flex;
@@ -318,13 +335,13 @@ section > h1 {
 }
 .about__part::after {
   content: "";
-  width: 0.1rem;
-  height: 80%;
+  width: 80%;
+  height: 0.1rem;
   background-color: rgb(217, 170, 96);
   position: absolute;
-  left: calc(100% + 0.6rem);
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  top: calc(100% + 0.6rem);
+  transform: translateX(-50%);
   border-radius: 2rem;
 }
 .about__part:nth-last-child(1)::after {
@@ -332,7 +349,7 @@ section > h1 {
 }
 .about__heading {
   font-size: 2.4rem;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   font-family: "Londrina Solid", cursive;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -340,7 +357,7 @@ section > h1 {
 }
 .about__description {
   font-size: 1.6rem;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   font-family: "Work Sans", sans-serif;
 }
 
@@ -391,7 +408,7 @@ section > h1 {
 .pets__name {
   font-size: 2.6rem;
   font-family: "Londrina Solid", cursive;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -411,10 +428,10 @@ section > h1 {
   position: relative;
 }
 .contact__title {
-  color: #8D5230;
+  color: rgb(141, 82, 48);
 }
 .contact__text {
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   font-family: "Work Sans", sans-serif;
   text-align: center;
   font-size: 1.6rem;
@@ -444,10 +461,10 @@ section > h1 {
 .contact__input {
   font-size: 1.6rem;
   font-family: "Work Sans", sans-serif;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
   padding: 1rem;
   border-radius: 1rem;
-  border: 1px solid #8D5230;
+  border: 1px solid rgb(141, 82, 48);
   outline: none;
 }
 .contact__send {
@@ -486,7 +503,7 @@ section > h1 {
 .contact__heading {
   font-size: 4rem;
   font-family: "Londrina Solid", cursive;
-  color: #8D5230;
+  color: rgb(141, 82, 48);
 }
 .contact__name {
   font-size: 2.4rem;
@@ -502,7 +519,7 @@ section > h1 {
 }
 
 .footer {
-  background-color: #8D5230;
+  background-color: rgb(141, 82, 48);
   position: relative;
   margin-top: 3.5rem;
 }
@@ -610,5 +627,26 @@ section > h1 {
   }
   .about__image {
     max-width: 250px;
+  }
+  .about__part {
+    position: relative;
+    padding: 0.5rem 0;
+  }
+  .about__part::after {
+    content: "";
+    width: 0.1rem;
+    height: 80%;
+    background-color: rgb(217, 170, 96);
+    position: absolute;
+    left: calc(100% + 0.6rem);
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2rem;
+  }
+  .nav__mobile {
+    display: none;
+  }
+  .nav__menu {
+    display: flex;
   }
 }

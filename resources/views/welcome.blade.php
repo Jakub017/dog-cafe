@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,8 @@
             <div class="nav__wrapper">
                 <img class="nav__logo" src="{{ asset('img/logo.png') }}" alt="">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Offer</a></li>
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href=".offer" class="nav__link">Offer</a></li>
                     <li class="nav__item"><a href="" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Our pets</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
@@ -63,80 +63,89 @@
             <div class="offer__background"></div>
             <h1 class="offer__title">Our Offer</h1>
             <div class="offer__isotope">
-                <button class="offer__button">Coffee</button>
-                <button class="offer__button">Tea</button>
-                <button class="offer__button">Cakes</button>
-                <button class="offer__button offer__button--active">Dog treats</button>
+                <button class="offer__button offer__button--coffee">Coffee</button>
+                <button class="offer__button offer__button--tea offer__button--active">Tea</button>
+                <button class="offer__button offer__button--cakes">Cakes</button>
+                <button class="offer__button offer__button--treats">Dog treats</button>
             </div>
             <div class="offer__wrapper">
-                <div class="offer__item">
+                <div class="offer__item offer__item--coffee">
                     <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
+                        <h2 class="offer__name">Dalgona Coffee</h2>
+                        <h3 class="offer__price">$16</h3>
+                    </div>
+                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                </div>
+                <div class="offer__item offer__item--coffee">
+                    <img src="{{ asset('img/black_coffee.png') }}" alt="" class="offer__img">
+                    <div class="offer__tag">
+                        <h2 class="offer__name">Black Coffee</h2>
+                        <h3 class="offer__price">$13</h3>
+                    </div>
+                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                </div>
+                <div class="offer__item offer__item--tea offer__item--active">
+                    <img src="{{ asset('img/linden_tea.png') }}" alt="" class="offer__img">
+                    <div class="offer__tag">
+                        <h2 class="offer__name">Linden Tea</h2>
+                        <h3 class="offer__price">$10</h3>
+                    </div>
+                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                </div>
+                <div class="offer__item offer__item--cake">
+                    <img src="{{ asset('img/chocolate_cake.png') }}" alt="" class="offer__img">
+                    <div class="offer__tag">
+                        <h2 class="offer__name">Chocolate Cake</h2>
                         <h3 class="offer__price">$12</h3>
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
                 </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
+                <div class="offer__item offer__item--tea offer__item--active">
+                    <img src="{{ asset('img/matcha_tea.png') }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
+                        <h2 class="offer__name">matcha Tea</h2>
+                        <h3 class="offer__price">$13</h3>
+                    </div>
+                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                </div>
+                <div class="offer__item offer__item--treat">
+                    <img src="{{ asset('img/chewing_sticks.png') }}" alt="" class="offer__img">
+                    <div class="offer__tag">
+                        <h2 class="offer__name">Chewing Sticks</h2>
+                        <h3 class="offer__price">$10</h3>
+                    </div>
+                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                </div>
+                <div class="offer__item offer__item--cake">
+                    <img src="{{ asset('img/bundt_cake.png') }}" alt="" class="offer__img">
+                    <div class="offer__tag">
+                        <h2 class="offer__name">Bundt Cake</h2>
                         <h3 class="offer__price">$12</h3>
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
                 </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
+                <div class="offer__item offer__item--treat">
+                    <img src="{{ asset('img/chewing_bone.png') }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
+                        <h2 class="offer__name">Chewing Bone</h2>
+                        <h3 class="offer__price">$14</h3>
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
                 </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
+                <div class="offer__item offer__item--tea offer__item--active">
+                    <img src="{{ asset('img/herbal_tea.png') }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona coffee</h2>
-                        <h3 class="offer__price">$12</h3>
+                        <h2 class="offer__name">Herbal Tea</h2>
+                        <h3 class="offer__price">$13</h3>
                     </div>
                     <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
                         porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
@@ -322,6 +331,8 @@
                 to <b><a class="footer__link" target="_blank" href="https://www.kittycafe.co.uk/">Kitty Cafe</a></b></p>
         </div>
     </footer>
+
+    <script src="{{ asset('js/custom.js') }}"></script>
 </body>
 
 </html>

@@ -1,10 +1,9 @@
 // Variables
 $baige: rgb(217, 170, 96);
-$brown: #8D5230;
+$brown: rgb(141, 82, 48);
 $pink: rgb(226, 152, 159);
 $blue: rgb(160, 216, 238);
 $shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
-
 
 $mainFont: 'Londrina Solid',
 cursive;
@@ -79,7 +78,13 @@ section {
         color: #fff;
         font-size: 2.2rem;
         text-decoration: none;
-        font-weight: 300;
+        text-transform: uppercase;
+        font-family: $mainFont;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            color: $baige;
+        }
     }
 
     &__hamburger {
@@ -221,7 +226,6 @@ section {
         top: 0;
         left: 0;
         background-image: url('../img/dog.png');
-        // background-size: 42px;
     }
 
     &__wrapper {
@@ -258,14 +262,21 @@ section {
         background-color: #fff;
         font-size: 2.1rem;
         box-shadow: $shadow;
+        transition: .3s ease-in-out;
+        cursor: pointer;
 
-        // text-transform: uppercase;
+        &:hover {
+            transform: scale(1.05);
+        }
 
         &--active {
             color: #fff;
             background-color: $baige;
-        }
 
+            &:hover {
+                transform: scale(1);
+            }
+        }
     }
 
     &__item {
@@ -280,6 +291,11 @@ section {
         flex-direction: column;
         gap: 1.5rem;
         box-shadow: $shadow;
+        display: none;
+
+        &--active {
+            display: flex;
+        }
     }
 
     &__img {
@@ -305,7 +321,6 @@ section {
         font-family: $mainFont;
         font-size: 2.4rem;
         color: $baige;
-        // letter-spacing: .2rem;
     }
 
     &__description {
@@ -383,13 +398,13 @@ section {
 
         &::after {
             content: '';
-            width: .1rem;
-            height: 80%;
+            width: 80%;
+            height: .1rem;
             background-color: $baige;
             position: absolute;
-            left: calc(100% + .6rem);
-            top: 50%;
-            transform: translateY(-50%);
+            left: 50%;
+            top: calc(100% + .6rem);
+            transform: translateX(-50%);
             border-radius: 2rem;
         }
 
@@ -737,5 +752,33 @@ section {
         &__image {
             max-width: 250px;
         }
+
+        &__part {
+            position: relative;
+            padding: .5rem 0;
+
+            &::after {
+                content: '';
+                width: .1rem;
+                height: 80%;
+                background-color: $baige;
+                position: absolute;
+                left: calc(100% + .6rem);
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 2rem;
+            }
+        }
+    }
+
+    .nav {
+        &__mobile {
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+        }
+
     }
 }
