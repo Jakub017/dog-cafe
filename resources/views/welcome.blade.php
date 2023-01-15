@@ -69,87 +69,46 @@
                 <button class="offer__button offer__button--treats">Dog treats</button>
             </div>
             <div class="offer__wrapper">
+                @foreach($coffees as $coffee)
                 <div class="offer__item offer__item--coffee">
-                    <img src="{{ asset('img/coffee1.png') }}" alt="" class="offer__img">
+                    <img src="{{ asset('storage/'.$coffee->image) }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Dalgona Coffee</h2>
-                        <h3 class="offer__price">$16</h3>
+                        <h2 class="offer__name">{{ $coffee->name }}</h2>
+                        <h3 class="offer__price">{{ $coffee->price }}</h3>
                     </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                    <p class="offer__description">{{ $coffee->description }}</p>
                 </div>
-                <div class="offer__item offer__item--coffee">
-                    <img src="{{ asset('img/black_coffee.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Black Coffee</h2>
-                        <h3 class="offer__price">$13</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
+                @endforeach
+                @foreach($teas as $tea)
                 <div class="offer__item offer__item--tea offer__item--active">
-                    <img src="{{ asset('img/linden_tea.png') }}" alt="" class="offer__img">
+                    <img src="{{ asset('storage/'.$tea->image) }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Linden Tea</h2>
-                        <h3 class="offer__price">$10</h3>
+                        <h2 class="offer__name">{{ $tea->name }}</h2>
+                        <h3 class="offer__price">{{ $tea->price }}</h3>
                     </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                    <p class="offer__description">{{ $tea->description }}</p>
                 </div>
+                @endforeach
+                @foreach($cakes as $cake)
                 <div class="offer__item offer__item--cake">
-                    <img src="{{ asset('img/chocolate_cake.png') }}" alt="" class="offer__img">
+                    <img src="{{ asset('storage/'.$cake->image) }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Chocolate Cake</h2>
-                        <h3 class="offer__price">$12</h3>
+                        <h2 class="offer__name">{{ $cake->name }}</h2>
+                        <h3 class="offer__price">{{ $cake->price }}</h3>
                     </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                    <p class="offer__description">{{ $cake->description }}</p>
                 </div>
-                <div class="offer__item offer__item--tea offer__item--active">
-                    <img src="{{ asset('img/matcha_tea.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">matcha Tea</h2>
-                        <h3 class="offer__price">$13</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
+                @endforeach
+                @foreach($treats as $treat)
                 <div class="offer__item offer__item--treat">
-                    <img src="{{ asset('img/chewing_sticks.png') }}" alt="" class="offer__img">
+                    <img src="{{ asset('storage/'.$treat->image) }}" alt="" class="offer__img">
                     <div class="offer__tag">
-                        <h2 class="offer__name">Chewing Sticks</h2>
-                        <h3 class="offer__price">$10</h3>
+                        <h2 class="offer__name">{{ $treat->name }}</h2>
+                        <h3 class="offer__price">{{ $treat->price }}</h3>
                     </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
+                    <p class="offer__description">{{ $treat->description }}</p>
                 </div>
-                <div class="offer__item offer__item--cake">
-                    <img src="{{ asset('img/bundt_cake.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Bundt Cake</h2>
-                        <h3 class="offer__price">$12</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item offer__item--treat">
-                    <img src="{{ asset('img/chewing_bone.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Chewing Bone</h2>
-                        <h3 class="offer__price">$14</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
-                <div class="offer__item offer__item--tea offer__item--active">
-                    <img src="{{ asset('img/herbal_tea.png') }}" alt="" class="offer__img">
-                    <div class="offer__tag">
-                        <h2 class="offer__name">Herbal Tea</h2>
-                        <h3 class="offer__price">$13</h3>
-                    </div>
-                    <p class="offer__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-                        porro nulla nobis excepturi cumque accusamus inventore dolorum itaque ducimus!</p>
-                </div>
+                @endforeach
             </div>
         </section>
         <section class="about">
