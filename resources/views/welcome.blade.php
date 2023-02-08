@@ -49,14 +49,11 @@
         <section class="hero">
             <div class="hero__wrapper">
                 <div class="hero__text">
-                    <h1 class="hero__title">WELCOME TO DOGGO CAFÉ.
-                        <span class="colored-baige">CUTE DOGS, GOOD FOOD, HAPPY PEOPLE!</span></h1>
-                    <p class="hero__description">The Doggo Café is a heaven for dog lovers, where you can enjoy
-                        delicious cakes, coffees and teas all in the company of our resident dogs.
-                    </p>
+                    <h1 class="hero__title">{!! setting('hero-section.title') !!}</h1>
+                    <p class="hero__description">{{ setting('hero-section.description') }}</p>
                     <a href="#" class="hero__button">Book a table</a>
                 </div>
-                <img class="hero__image" src="{{ asset('img/main.png') }}" alt="">
+                <img class="hero__image" src="{{ asset('storage/'.setting('hero-section.image')) }}" alt="">
             </div>
         </section>
         <section class="offer">
@@ -119,21 +116,15 @@
                 <div class="about__text">
                     <div class="about__part">
                         <h1 class="about__heading">Our mission</h1>
-                        <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                            beatae alias consectetur natus molestiae, tempora, unde omnis inventore tenetur magnam
-                            incidunt.</p>
+                        <p class="about__description">{{ setting('about.mission') }}</p>
                     </div>
                     <div class="about__part">
                         <h1 class="about__heading">Our impact</h1>
-                        <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                            beatae alias consectetur natus molestiae, tempora, unde omnis inventore tenetur magnam
-                            incidunt.</p>
+                        <p class="about__description">{{ setting('about.impact') }}</p>
                     </div>
                     <div class="about__part">
                         <h1 class="about__heading">Our history</h1>
-                        <p class="about__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                            beatae alias consectetur natus molestiae, tempora, unde omnis inventore tenetur magnam
-                            incidunt.</p>
+                        <p class="about__description">{{ setting('about.history') }}</p>
                     </div>
                 </div>
             </div>
@@ -192,21 +183,22 @@
                     <div class="contact__block">
                         <h4 class="contact__name">Opening hours</h4>
                         <p class="contact__part">
-                            <b>Monday: </b>12:00 - 21:00<br>
-                            <b>Tuesday: </b>12:00 - 21:00<br>
-                            <b>Wednesday: </b>12:00 - 21:00<br>
-                            <b>Thursday: </b>12:00 - 21:00<br>
-                            <b>Friday: </b>12:00 - 22:00<br>
-                            <b>Saturday: </b>10:00 - 21:00<br>
-                            <b>Sunday: </b>10:00 - 21:00
+                            <b>Monday: </b>{{ setting('contact.monday') }}<br>
+                            <b>Tuesday: </b>{{ setting('contact.tuesday') }}<br>
+                            <b>Wednesday: </b>{{ setting('contact.wednesday') }}<br>
+                            <b>Thursday: </b>{{ setting('contact.thursday') }}<br>
+                            <b>Friday: </b>{{ setting('contact.friday') }}<br>
+                            <b>Saturday: </b>{{ setting('contact.saturday') }}<br>
+                            <b>Sunday: </b>{{ setting('contact.sunday') }}
                         </p>
                     </div>
                     <div class="contact__block">
                         <h4 class="contact__name">Contact</h4>
                         <p class="contact__part">
                             <b>Mail: </b><a class="contact__link"
-                                href="mailto:contact@doggocafe.co.uk">contact@doggocafe.co.uk</a><br>
-                            <b>Phone: </b><a class="contact__link" href="tel:5467 359 9843">5467 359 9843</a>
+                                href="mailto:{{ setting('contact.email') }}">{{ setting('contact.email') }}</a><br>
+                            <b>Phone: </b><a class="contact__link"
+                                href="tel:{{ setting('contact.phone') }}">{{ setting('contact.phone') }}</a>
                         </p>
                     </div>
                 </div>
