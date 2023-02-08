@@ -54,9 +54,9 @@
                     <p class="hero__description">The Doggo Café is a heaven for dog lovers, where you can enjoy
                         delicious cakes, coffees and teas all in the company of our resident dogs.
                     </p>
+                    <a href="#" class="hero__button">Book a table</a>
                 </div>
-                <a href="#" class="hero__button">Book a table</a>
-                <!-- <img class="hero__paws" src="{{ asset('img/paws.png') }}" alt=""> -->
+                <img class="hero__image" src="{{ asset('img/main.png') }}" alt="">
             </div>
         </section>
         <section class="offer">

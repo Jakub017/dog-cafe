@@ -58,7 +58,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 1rem 2rem 1rem 2rem;
         max-width: 1400px;
         margin: 0 auto;
     }
@@ -156,10 +156,10 @@ section {
 
     &__wrapper {
         display: flex;
-        flex-direction: column;
+        // flex-wrap: wrap;
         gap: 1.5rem;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 4rem;
         padding: 2rem;
         max-width: 1400px;
@@ -171,7 +171,6 @@ section {
     &__title {
         font-size: 4.2rem;
         font-family: $mainFont;
-        margin-bottom: 1.5rem;
         position: relative;
         max-width: 500px;
 
@@ -188,15 +187,6 @@ section {
         text-align: justify;
         color: $brown;
         max-width: 500px;
-    }
-
-    &__image {
-        display: none;
-        position: relative;
-        width: 100%;
-        max-width: 500px;
-        bottom: -100px;
-        right: -100px;
     }
 
     &__button {
@@ -217,6 +207,19 @@ section {
         bottom: 2rem;
         right: 2rem;
         max-width: 120px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    &__image {
+        max-width: 500px;
+        display: none;
     }
 }
 
@@ -785,5 +788,32 @@ section {
             display: flex;
         }
 
+    }
+
+    .hero {
+        &__title {
+            font-size: 5.5rem;
+            max-width: 600px;
+        }
+
+        &__wrapper {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+        }
+
+        &__image {
+            max-width: 350px;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .hero {
+
+        &__image {
+            max-width: 500px;
+            display: block;
+        }
     }
 }
