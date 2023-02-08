@@ -81,7 +81,7 @@ section {
         text-decoration: none;
         text-transform: uppercase;
         font-family: $mainFont;
-        transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
         background-color: transparent;
         cursor: pointer;
         border: none;
@@ -270,7 +270,7 @@ section {
         background-color: #fff;
         font-size: 2.1rem;
         box-shadow: $shadow;
-        transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
         cursor: pointer;
 
         &:hover {
@@ -572,6 +572,12 @@ section {
         outline: none;
         width: 150px;
         text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__wrapper {
@@ -615,6 +621,21 @@ section {
 
     &__link {
         text-decoration: none;
+    }
+
+    &__success {
+        width: 100%;
+        background-color: #28a745;
+        color: #fff;
+        font-size: 1.6rem;
+        font-family: $secondaryFont;
+        padding: 1.5rem;
+        border-radius: 1.2rem;
+    }
+
+    &__error {
+        font-family: $secondaryFont;
+        font-size: 1.5rem;
     }
 }
 

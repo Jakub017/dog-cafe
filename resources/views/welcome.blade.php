@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Work+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css') }}">
+    {!! RecaptchaV3::initJs() !!}
 </head>
 
 <body>
@@ -148,24 +149,50 @@
             <p class="contact__text">Ask a question about the cafe or adopting a pet! We will reply as soon as possible
             </p>
             <div class="contact__wrapper">
-                <form action="#" class="contact__form">
+
+                <form method="POST" action="{{ route('contact.us.store') }}" class="contact__form">
+                    {{ csrf_field() }}
+                    @if(Session::has('success'))
+                    <div class="contact__success">
+                        {{Session::get('success')}}
+                    </div>
+                    @endif
                     <div class="contact__field contact__field--half">
                         <label for="name" class="contact__label">Name</label>
-                        <input type="text" name="name" class="contact__input">
+                        <input type="text" name="name" class="contact__input" value="{{ old('name') }}">
+                        @if ($errors->has('name'))
+                        <span class="contact__error">{{ $errors->first('name') }}</span>
+                        @endif
                     </div>
                     <div class="contact__field contact__field--half">
                         <label for="email" class="contact__label">Email</label>
-                        <input type="email" name="email" class="contact__input">
+                        <input type="email" name="email" class="contact__input" value="{{ old('email') }}">
+                        @if ($errors->has('email'))
+                        <span class="contact__error">{{ $errors->first('email') }}</span>
+                        @endif
                     </div>
                     <div class="contact__field">
                         <label for="subject" class="contact__label">Subject</label>
-                        <input type="text" name="subject" class="contact__input">
+                        <input type="text" name="subject" class="contact__input" value="{{ old('subject') }}">
+                        @if ($errors->has('subject'))
+                        <span class="contact__error">{{ $errors->first('subject') }}</span>
+                        @endif
                     </div>
                     <div class="contact__field">
                         <label for="message" class="contact__label">Message</label>
-                        <textarea name="message" class="contact__input" cols="30" rows="10"></textarea>
+                        <textarea name="message" class="contact__input" cols="30"
+                            rows="10">{{ old('subject') }}</textarea>
+                        @if ($errors->has('message'))
+                        <span class="contact__error">{{ $errors->first('message') }}</span>
+                        @endif
                     </div>
-                    <button class="contact__send">Send!</button>
+                    <div class="contact__field">
+                        {!! RecaptchaV3::field('register') !!}
+                        @if ($errors->has('g-recaptcha-response'))
+                        <span class="contact__error">{{ $errors->first('g-recaptcha-response') }}</span>
+                        @endif
+                    </div>
+                    <input type="submit" value="Send!" class="contact__send">
                 </form>
                 <div class="contact__info">
                     <h2 class="contact__heading">

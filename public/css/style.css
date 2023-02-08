@@ -60,7 +60,7 @@ section > h1 {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Londrina Solid", cursive;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -223,7 +223,7 @@ section > h1 {
   background-color: #fff;
   font-size: 2.1rem;
   box-shadow: 3px 4px 0 2px rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 .offer__button:hover {
@@ -485,6 +485,11 @@ section > h1 {
   outline: none;
   width: 150px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.contact__send:hover {
+  transform: scale(1.05);
 }
 .contact__wrapper {
   display: flex;
@@ -522,6 +527,19 @@ section > h1 {
 }
 .contact__link {
   text-decoration: none;
+}
+.contact__success {
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+}
+.contact__error {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 .footer {
